@@ -82,7 +82,7 @@ public class Encrypt {
      *         initialization vector
      * @return 加密后的数据
      */
-    public static String cipher(String data, String key, String iv) {
+    public static String aes(String data, String key, String iv) {
         Cipher a = null;
         try {
             a = Cipher.getInstance("AES/CBC/NOPADDING");

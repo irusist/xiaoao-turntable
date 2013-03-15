@@ -171,7 +171,7 @@ public abstract class RequestService implements Runnable {
 
         String iv = Encrypt.md5(Constants.DEFAULT_ENCODING, time + Constants.MD5_SUFFIX).substring(16);
         // 登陆后的访问授权码
-        String accessToken = Encrypt.cipher(token, Constants.AES_KEY, iv);
+        String accessToken = Encrypt.aes(token, Constants.AES_KEY, iv);
         result.put("access_token", accessToken);
         return result;
     }
