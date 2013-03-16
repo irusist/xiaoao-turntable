@@ -116,7 +116,8 @@ public abstract class RequestService implements Runnable {
 
         method.addHeader("Connection", "close");
         method.addHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
-        method.addHeader("User-Agent", Constants.USER_AGENT);
+//        method.addHeader("User-Agent", Constants.USER_AGENT);
+        method.addHeader("User-Agent", Constants.USER_AGENT_IPHONE);
 
         Map<String, String> params = getCommonParams(token);
         params.putAll(getParams());

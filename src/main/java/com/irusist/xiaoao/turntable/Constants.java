@@ -54,9 +54,19 @@ public interface Constants {
     String BUY_URL = "http://wm.laohu.com/xajh_v1/store/buy";
 
     /**
-     * user-agent *
+     * win7下的IE8的user-agent *
      */
     String USER_AGENT = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)";
+
+    /**
+     * iphone5的user-agent
+     */
+    String USER_AGENT_IPHONE = "Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3";
+
+    /**
+     * ipad的user-agent
+     */
+    String USER_AGENT_IPAD = "Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3";
 
     /**
      * MD5加密后缀 *
